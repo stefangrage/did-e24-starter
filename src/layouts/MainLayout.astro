@@ -1,0 +1,31 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import '../styles/tailwind.css';
+import 'animate.css';
+const { title } = Astro.props;
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{Astro.props.title}</title>
+	</head>
+	<body>
+
+		<header>
+			<Header></Header>
+		</header>
+		
+		<main>
+			<slot />
+		</main>
+
+		<footer>
+			<Footer></Footer>
+		</footer>
+			
+	</body>
+</html>
