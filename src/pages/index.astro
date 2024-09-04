@@ -7,21 +7,16 @@ import BilledeSection from "../components/BilledeSection.astro";
 import Anmeldelser from "../components/Anmeldelser.astro";
 import Kapitler from "../components/Kapitler.astro";
 import BilledeGalleri from "../components/BilledeGalleri.astro";
+import Formular from "../components/Formular.astro";
 ---
 
 <MainLayout title="Titel">
   <article>
-    <h1>Index overskrift</h1>
-    <Button>Klik!</Button>
-    <p>
-      Link til <Link href="https://www.kea.dk" target="_blank"
-        >En anden side</Link
-      >
-    </p>
     <HeroSection />
     <Kapitler />
     <BilledeSection />
     <Anmeldelser />
     <BilledeGalleri />
+    <Formular />
   </article>
 </MainLayout>

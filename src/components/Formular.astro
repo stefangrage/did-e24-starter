@@ -1,0 +1,103 @@
+---
+import Button from "../components/Button.astro";
+---
+
+<form class="grid grid-cols-1 gap-4 px-8 max-w-md">
+  <p class="text-2xl font-bold">Køb bogen</p>
+
+  <div class="block">
+    <label for="antal">Antal:</label>
+    <input
+      type="”number”"
+      id="antal"
+      class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 hover:bg-gray-200 text-gray-500"
+      placeholder="1"
+    />
+  </div>
+
+  <div class="block">
+    <span>Levering:</span>
+    <div
+      class="bg-gray-100 rounded-md focus:border-gray-500 focus:bg-white focus:ring-0 hover:bg-gray-200 text-gray-500"
+    >
+      <input type="radio" id="postnord" name="levering" />
+      <label for="
+        postnord" checked="checked">Postnord</label>
+      <input type="radio" id="afhent" name="levering" />
+      <label for="afhent">Afhent selv</label>
+    </div>
+  </div>
+
+  <div class="block">
+    <label for="fname">Navn:</label>
+    <input
+      type="text"
+      id="fname"
+      class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 hover:bg-gray-200 text-gray-500"
+      name="fname"
+      value="Lea"
+    />
+  </div>
+
+  <div class="block">
+    <label for="adresse">Adresse:</label>
+    <input
+      type="text"
+      id="adresse"
+      class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 hover:bg-gray-200 text-gray-500"
+      name="adresse"
+      value="Ingridmarie vej 75"
+    />
+  </div>
+
+  <div class="block">
+    <label class="text-gray-700" for="email">Email:</label>
+    <input
+      type="email"
+      class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 hover:bg-gray-200 text-gray-500"
+      id="email"
+      name="email"
+      value="Lea.tvilling.hansen@gmail.com"
+    />
+  </div>
+
+  <div class="block">
+    <label for="post">Postnummer:</label>
+    <input
+      type="text"
+      id="post"
+      class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 hover:bg-gray-200 text-gray-500"
+      name="post"
+      value="2500"
+    />
+  </div>
+
+  <div class="block">
+    <label class="text-gray-700" for="by">Bynavn:</label>
+    <input
+      type="text"
+      id="by"
+      class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 hover:bg-gray-200 text-gray-500"
+      name="by"
+      value="Valby"
+    />
+  </div>
+
+  <div class="block">
+    <label for="phone">Telefon:</label>
+    <input
+      type="tel"
+      id="phone"
+      class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 hover:bg-gray-200 text-gray-500"
+      pattern="52404101"
+      value="52404101"
+    />
+  </div>
+
+  <div class="block">
+    <span>Ja tak til nyhedsbrev og tilbud:</span>
+    <input type="radio" id="nyhed" name="nyhed" />
+    <label for="nyhed" checked="checked"></label>
+  </div>
+  <Button variant="primary" size="small">Til betaling</Button>
+</form>
