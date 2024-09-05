@@ -1,12 +1,18 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import HeroSection from "../components/HeroSection.astro";
 ---
+
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-	</article>
+  <article>
+    <h1>Index overskrift</h1>
+    <Button>Klik!</Button>
+    <p>
+      Link til <Link href="https://www.kea.dk" target="_blank"
+        >En anden side</Link>
+    </p>
+    <HeroSection />
+  </article>
 </MainLayout>
